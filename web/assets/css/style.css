@@ -806,7 +806,7 @@ html, body {
   */
 }
 .navbar .brand-name {
-  background-color: #FFDF00;
+  background-color: #004E80;
   width: 135px;
   height: 100%;
   position: relative;
@@ -1905,6 +1905,9 @@ html, body {
 /*
  * COMPRA AHORA
 */
+.section-compra {
+  background-color: #00BFF2;
+}
 @media (min-width: 992px) {
   .section-compra {
     display: flex;
@@ -1922,7 +1925,6 @@ html, body {
     -ms-flex-direction: row-reverse;
     -o-flex-direction: row-reverse;
     flex-direction: row-reverse;
-    background-color: #FFDF00;
   }
 }
 @media (min-width: 1600px) {
@@ -1931,7 +1933,7 @@ html, body {
   }
 }
 .section-compra .texto-destacado {
-  color: #00B5F1;
+  color: #fff;
   text-transform: uppercase;
   font-size: 55px;
   line-height: 45px;
@@ -2011,7 +2013,7 @@ html, body {
 .section-compra .compra-wrapper h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #003E6F;
+  color: #fff;
 }
 @media (min-width: 1200px) {
   .section-compra .compra-wrapper h2 {
@@ -2042,8 +2044,8 @@ html, body {
   }
 }
 .section-compra .compra-wrapper .wrapper-button a {
-  background-color: #00B5F1;
-  color: #fff;
+  background-color: #fff;
+  color: #00BFF2;
 }
 
 /*
@@ -2128,7 +2130,7 @@ html, body {
 }
 
 .viaje-wrapper {
-  background-color: #00B5F1;
+  background-color: #004E80;
 }
 
 /*
@@ -2660,7 +2662,7 @@ html, body {
   font-family: "BentonSans", "Helvetica Neue Roman", sans-serif;
   font-weight: 900;
   font-style: italic;
-  color: #FFDF00;
+  color: #EB008B;
   font-size: 50px;
   line-height: 50px;
   text-transform: uppercase;

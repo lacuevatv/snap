@@ -756,6 +756,8 @@
  * COMPRA AHORA
 */
 .section-compra {
+    //background-color: $color-amarillo;
+    background-color: #00BFF2;
     @media (min-width: $md) {
         display: flex;
         display: -o-flex;
@@ -772,7 +774,6 @@
         -ms-flex-direction: row-reverse;
         -o-flex-direction: row-reverse;
         flex-direction: row-reverse;
-        background-color: $color-amarillo;
     }
 
     @media (min-width: $xlg) {
@@ -780,7 +781,8 @@
     }
 
     .texto-destacado {
-        color: $color-celeste;
+        //color: $color-celeste;
+        color: $color-blanco;
         text-transform: uppercase;
         font-size: 55px;
         line-height: 45px;
@@ -851,7 +853,8 @@
         h2 {
             font-size: 24px;
             margin-bottom: 20px;
-            color: $color-azul;
+            //color: $color-azul;
+            color: $color-blanco;
             @media (min-width: $lg) {
                 font-size: 28px;
                 line-height: 36px;
@@ -875,8 +878,10 @@
             }
 
             a {
-                background-color: $color-celeste;
-                color: $color-blanco;
+                //background-color: $color-celeste;
+                //color: $color-blanco;
+                background-color: $color-blanco;
+                color: #00BFF2;
             }
         }
 
@@ -973,7 +978,7 @@
 
 .viaje-wrapper {
     @extend .viajo;
-    background-color:$color-celeste;
+    background-color:#004E80;
 
 }//.viaje-wrapper
 
