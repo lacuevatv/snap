@@ -1,0 +1,1083 @@
+.home-header {
+    position: relative;
+    background-color: $color-azul;
+    color: $color-blanco;
+    //padding-top: 70px;
+    z-index: 1;
+    overflow: hidden;
+    //height: 0;
+    @include transition(all $transitionSpeedx2);
+    @media (min-width: $lg) {
+        //padding-top: 100px;
+    }
+
+    .legales-header {
+        color: $color-rosa;
+        z-index: 2;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        position: absolute;
+        bottom: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        @media (min-width: $sm) {
+            bottom: 10px;
+        }
+        @media (min-width: $md) {
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -o-align-items: center;
+            align-items: center;
+            margin: 0;
+            bottom: initial;
+            top: 0;
+            right: 150px;
+            height: 70px;
+            padding-bottom: 0;
+            display: none;
+        }
+        @media (min-width: $lg) {
+            height: 100px;
+        }
+
+        p {
+            font-size: 8px;
+            font-family: $fuente-secundaria;
+            font-weight: 500;
+            text-align: center;
+            line-height: 10px;
+
+            @media (min-width: 370px) {
+                font-size: 9px;
+            }
+
+            @media (min-width: 400px) {
+                font-size: 10px;
+                line-height: 12px;
+            }
+            @media (min-width: $lg) {
+                text-align: right;
+            }
+        }
+    }//.legales-header
+
+}//.slider-header-wrapper
+
+/*
+ * ICONS SUPERIORES
+ * se anida en nosotros
+*/
+.icon-header {
+    .left-icons-header {
+        display: none;
+
+        @media (min-width: $lg) {
+            color: $color-amarillo;
+            height: 400px;
+            width: $paddingLeftRightLG;
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -o-align-items: center;
+            align-items: center;
+            -webkit-justify-content: flex-start;
+            -moz-justify-content: flex-start;
+            -ms-justify-content: flex-start;
+            -o-justify-content: flex-start;
+            justify-content: flex-start;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            -o-flex-direction: column;
+            flex-direction: column;
+            z-index: 111;
+            position: absolute;
+            top: -200px;
+            left: 0;
+        }
+        @media (min-width: $xlg) {
+            width: $paddingLeftRightXLG;
+        }
+
+        img {
+            width: 9px;
+            @media (min-width: $xlg) {
+                width: 12px;
+            }
+        }
+
+        p {
+            margin-top: 35px;
+            font-weight: 600;
+            font-size: 12px;
+            @include transform(rotate(-90deg));
+            position: relative;
+            @media (min-width: $xlg) {
+                font-size: 14px;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                @include transform(translateY(-50%));
+                top: 50%;
+                left: -220px;
+                height: 1px;
+                width: 200px;
+                background-color: $color-amarillo;
+            }
+        }
+
+        
+    }//.left-icons-header
+
+    .right-icons-header {
+        display: none;
+
+        @media (min-width: $lg) {
+            display: block;
+            color: $color-rosa;
+            height: 100px;
+            width: 800px;
+            z-index: 111;
+            position: absolute;
+            top: -1000px;
+            right: 0;
+            transform-origin: bottom right;
+            @include transform(rotate(-90deg));
+        }
+        @media (min-width: $xlg) {
+            //top: -1000px;
+        }
+
+        ul {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -o-align-items: center;
+            align-items: center;
+            -webkit-justify-content: flex-start;
+            -moz-justify-content: flex-start;
+            -ms-justify-content: flex-start;
+            -o-justify-content: flex-start;
+            justify-content: flex-start;
+            font-size: 12px;
+            font-weight: 600;
+
+            @media (min-width: $xlg) {
+                font-size: 14px;
+            }
+
+            li {
+                margin-right: 15px;
+
+                @media (min-width: $xlg) {
+                    margin-right: 30px;
+                }
+
+                img {
+                    width: 20px;
+                    padding-right: 5px;
+                    @media (min-width: $xlg) {
+                        padding-right: 10px;
+                        width: 26px;
+                    }   
+                }
+            }
+        }
+    }//.right-icons-header
+
+    .rotate-img {
+        @include transform(rotate(90deg) translateX(2px));
+        @media (min-width: $xlg) {
+            @include transform(rotate(90deg) translateX(5px));
+        }
+    }
+}//.icon-header
+
+/*
+ * NOSOTROS
+*/
+.nosotros-wrapper {
+    position: relative;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+
+    .icon-vertical {
+        width: 20%;
+        max-width: 75px;
+        background-color: $color-celeste;
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        -o-justify-content: center;
+        justify-content: center;
+        padding-top: 70px;
+        @media (min-width: $md) {
+            padding-top: 220px;
+        }
+        @media (min-width: $xlg) {
+            padding-top: 300px;
+        }
+
+        @media (min-width: $lg) {
+            max-width: $paddingLeftRightLG;
+        }
+        @media (min-width: $xlg) {
+            max-width: $paddingLeftRightXLG;
+        }
+
+        img {
+            width: 90%;
+            display: block;
+            margin: 10px auto;
+            max-width: 72px;
+            height: auto;
+
+            @media (min-width: $lg) {
+                width: 100%;
+            }
+            @media (min-width: $xlg) {
+                width: 72px;
+            }
+        }
+    }
+    
+    .contenido-nosotros {
+        width: 80%;
+        -webkit-flex-grow: 1;
+        -moz-flex-grow: 1;
+        -ms-flex-grow: 1;
+        -o-flex-grow: 1;
+        flex-grow: 1;
+        color: $color-azul;
+
+        @media (min-width: $md) {
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+        }
+    }//.contenido-nosotros 
+
+    .contenido {
+        font-size: 15px;
+        padding: 70px 15% 20px 10%;
+        @media (min-width: $md) {
+            font-size: 16px;
+            width: 45%;
+            padding: 220px 5% 140px 8%;
+        }
+        @media (min-width: $xlg) {
+            padding: 300px 5% 150px 8%;
+        }
+
+        h2 {
+            font-family: $fuente-especial;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 22px;
+            line-height: 34px;
+            margin-bottom: 50px;
+            
+            @media (min-width: 375px) {
+                font-size: 26px;
+                line-height: 40px;
+            }
+            @media (min-width: $sm) {
+                font-size: 49px;
+                line-height: 65px;
+                margin-bottom: 50px;    
+            }
+
+            .higline {
+                background-color: $color-rosa;
+                color: $color-blanco;
+                padding: 6px 17px 1px 15px;
+                @media (min-width: $sm) {
+                    padding: 8px 17px 1px 15px;
+                }
+            }
+
+            .color-invert {
+                background-color: $color-amarillo;
+                color: $color-azul;
+                padding: 6px 17px 1px 15px;
+                @media (min-width: $sm) {
+                    padding: 8px 17px 1px 15px;
+                }
+            }
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #FF6C6C;
+            display: block;
+            margin-top: 60px;
+            font-size: 14px;
+            font-family: $fuente-secundaria;
+            font-weight: 500;
+
+            &:after {
+                content: '>';
+                padding-left: 7px;
+            }
+
+            @media (min-width: $lg) {
+                margin-top: 150px;
+            }
+            @media (min-width: $xlg) {
+                margin-top: 100px;
+            }
+        }
+    }
+
+    .imagen-nosotros {
+        position: relative;
+        overflow: hidden;
+        height: 160px;
+        width: 100%;
+        @media (min-width: $md) {
+            width: 55%;
+            height: 100%;
+        }
+        img {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 414px;
+            @include transform(translateY(-50%));
+
+            @media (min-width: $md) {
+                width: 100%;
+                right: initial;
+                top: 50%;
+                left: 50%;
+                @include transform(translate3d(-50%,-50%,0));
+            }
+        }
+    }//.imagen-nosotros
+}//.nosotros-wrapper
+
+
+/*
+ * DESTINOS
+*/
+.destinos-wrapper {
+    position: relative;
+    @media (min-width: $md) {
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+    }
+
+    li {
+        width: 100%;
+        //height: 365px;
+        @media (min-width: $sm) {
+            //height: 540px;
+        }
+        @media (min-width: $md) {
+            width: 50%;
+            //height: 365px;
+        }
+        @media (min-width: $xlg) {
+            //height: 540px;
+        }
+    }
+
+    .destino {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        padding: 20px 35px 25px;
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+
+        @media (min-width: $md) {
+            padding: 20px $paddingLeftRight 40px;
+        }
+
+        @media (min-width: $lg) {
+            padding: 20px $paddingLeftRightLG 50px;
+        }
+
+        @media (min-width: $xlg) {
+            padding: 55px $paddingLeftRightXLG 70px;
+        }
+
+        .imagen-fondo {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+
+            img {
+                width: 160%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @include transform(translate3d(-50%,-50%,0));
+
+                @media (min-width: $sm) {
+                    width: 110%;
+                }
+
+                @media (min-width: $md) {
+                    width: 120%;
+                }
+
+                @media (min-width: $lg) {
+                    width: 110%;
+                }
+                @media (min-width: $xlg) {
+                    width: 100%;
+                }
+            }
+            
+        }
+
+        .icon-top-right {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            top: 0;
+            right: 0;
+            
+            @media (min-width: $xlg) {
+                width: 125px;
+                height: 125px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+        
+        .super-title {
+            font-family: $fuente-caracteres;
+            font-weight: 900;
+            font-size: 178px;
+            letter-spacing: -15px;
+            line-height: 147px;
+            -webkit-text-stroke: 2px $color-negro;
+            color: transparent;
+            position: relative;
+            @media (min-width: $xlg) {
+                font-size: 240px;
+                line-height: 198px;
+                letter-spacing: -22px;
+            }
+        }//.super-title
+
+        .title-destino {
+            position: relative;
+            font-size: 18px;
+            margin-top: 15px;
+            margin-bottom: 50px;
+
+            @media (min-width: $lg) {
+                margin-bottom: 60px;
+            }
+
+            @media (min-width: $xlg) {
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                width: 70px;
+                height: 14px;
+                background-image: url('../images/estrellas.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+                bottom: -20px;
+
+                @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+                    background-image: url('../images/estrellas@2x.png');
+                    background-size: contain;
+                }
+
+                @media (min-width: $lg) {
+                    background-image: url('../images/estrellas.png');
+                    background-size: contain;
+                    width: 96px;
+                    height: 16px;
+                    bottom: -30px;
+                }
+
+                @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+                    background-image: url('../images/estrellas@2x.png');
+                    background-size: contain;
+                }
+            }
+        }//.title-destino
+
+        a {
+            img {
+                max-width: 20px!important;
+            }
+        }
+
+    }//destino
+
+
+    .bariloche {
+        background-color: $color-rosa;
+
+        .icon-top-right {
+            background-color: $color-verde;
+        }
+
+        .super-title{
+            -webkit-text-stroke: 2px $color-verde;
+        }
+        
+        a{ 
+            background-color: $color-verde;  
+        }
+    }//.bariloche
+
+    .villa-carlos-paz {
+        .super-title{
+            -webkit-text-stroke: 2px $color-amarillo;
+        }
+
+        a{ 
+            background-color: $color-amarillo;  
+        }
+    }
+
+    .san-rafael {
+        .super-title {
+            -webkit-text-stroke: 2px $color-rosa;
+        }
+
+        .title-destino {
+            color: $color-blanco;
+
+            &:after {
+                background-image: url('../images/white-stars.png');
+                background-size: contain;
+                
+            
+                @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+                    background-image: url('../images/white-stars@2x.png');
+                    background-size: contain;
+                }
+
+                @media (min-width: $lg) {
+                    background-image: url('../images/white-stars.png');
+                    background-size: contain;
+                    width: 96px;
+                    height: 16px;
+                    bottom: -30px;
+                }
+
+                @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+                    background-image: url('../images/white-stars@2x.png');
+                    background-size: contain;
+                }
+            }
+        }
+
+        a{ 
+            background-color: $color-rosa;  
+            color: $color-blanco;
+        }
+    }
+
+}//.destinos-wrapper
+
+/*
+ * EXPERIENCIAS
+*/
+.wrapper-slider-testimonios {
+    background-color: $color-azul;
+    color: $color-blanco;
+
+    ul {
+        .experiencia {
+            @media (min-width: $md) {
+                display: flex;
+                display: -o-flex;
+                display: -ms-flex;
+                display: -moz-flex;
+                display: -webkit-flex;
+                flex-direction: row-reverse;
+            }
+            
+        }//.experiencia
+    }
+    
+    .experiencia-data {
+        padding: 50px $paddingLeftRight 100px;
+        height: 380px;
+        background-color: $color-rosa;
+        @media (min-width: $sm) {
+            height: 410px;
+        }
+        @media (min-width: $md) {
+            padding: 50px $paddingLeftRight 50px;
+            width: 50%;
+            height: 360px;
+        }
+        @media (min-width: $lg) {
+            padding: 50px $paddingLeftRightLG 100px;
+            height: 360px;
+        }
+        @media (min-width: $xlg) {
+            padding: 80px $paddingLeftRightXLG 100px;
+            height: 540px;
+        }
+
+        .title-experiencia {
+            font-family: $fuente-especial;
+            color: $color-amarillo;
+            font-weight: 600;
+            font-weight: 500;
+            font-size: 55px;
+            text-transform: uppercase;
+            line-height: 55px;
+            margin-top: 40px;
+            width: 100%;
+            max-width: 380px;
+            margin-bottom: 100px;
+            @media (min-width: $md) {
+                margin-bottom: 100px;
+            }
+
+            @media (min-width: $xlg) {
+                margin-bottom: 150px;
+                font-size: 100px;
+                line-height: 84px;
+                max-width: 600px;
+            }
+        }
+
+        .nombre-experiencia {
+            margin-top: 30px;
+        }
+
+        img {
+            width: auto;
+        }
+    }//.experiencia-data
+
+    .experiencia-contenido {
+        height: 365px;
+        @media (min-width: $sm) {
+            height: 540px;
+        }
+        @media (min-width: $md) {
+            width: 50%;
+            height: auto;
+        }
+
+        .owl-video-wrapper .owl-video-frame {
+            display: flex!important;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -o-align-items: center;
+            align-items: center!important;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            -ms-justify-content: center;
+            -o-justify-content: center;
+            justify-content: center;
+        }
+    }//.experiencia-contenido
+
+}//.wrapper-slider-testimonios
+
+
+/*
+ * COMPRA AHORA
+*/
+.section-compra {
+    @media (min-width: $md) {
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-flex-direction: row-reverse;
+        -moz-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+        -o-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+        background-color: $color-amarillo;
+    }
+
+    @media (min-width: $xlg) {
+        height: 540px;
+    }
+
+    .texto-destacado {
+        color: $color-celeste;
+        text-transform: uppercase;
+        font-size: 55px;
+        line-height: 45px;
+        letter-spacing: -2px;
+        font-family: $fuente-especial;
+        font-weight: 800;
+        padding: 110px 20px 60px $paddingLeftRight;
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        -webkit-align-items: flex-end;
+        -moz-align-items: flex-end;
+        -ms-align-items: flex-end;
+        -o-align-items: flex-end;
+        align-items: flex-end;
+        @media (min-width: $sm) {
+            font-size: 96px;
+            line-height: 80px;
+            letter-spacing: -5px;
+        }
+        @media (min-width: $md) {
+            padding: 60px 0 50px;
+            width: 50%;
+            font-size: 160px;
+            line-height: 121px;
+            letter-spacing: -8px;
+        }
+        @media (min-width: $xlg) {
+            padding: 90px 0 50px;
+            font-size: 240px;
+            line-height: 181px;
+            letter-spacing: -10px;
+        }
+    }//.texto-destacado
+
+    .compra-wrapper {
+        padding: 0 60px 60px $paddingLeftRight;
+        @media (min-width: $md) {
+            padding: 60px 60px 60px $paddingLeftRight;
+            width: 50%;
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            -o-flex-direction: column;
+            flex-direction: column;
+            -webkit-justify-content: flex-end;
+            -moz-justify-content: flex-end;
+            -ms-justify-content: flex-end;
+            -o-justify-content: flex-end;
+            justify-content: flex-end;
+        }
+
+        @media (min-width: $lg) {
+            padding: 90px 20px 70px $paddingLeftRightLG;
+            
+        }
+        @media (min-width: $xlg) {
+            padding: 80px 40px 70px $paddingLeftRightXLG;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: $color-azul;
+            @media (min-width: $lg) {
+                font-size: 28px;
+                line-height: 36px;
+            }
+            @media (min-width: $xlg) {
+                font-size: 36px;
+                line-height: 48px;
+            }
+        }
+
+        .wrapper-button {
+            margin-top: 130px;
+            margin-bottom: 50px;
+            @media (min-width: $md) {
+                margin-top: 20px;
+                margin-bottom: 45px;
+            }
+            @media (min-width: $xlg) {
+                margin-top: 30px;
+                margin-bottom: 115px;
+            }
+
+            a {
+                background-color: $color-celeste;
+                color: $color-blanco;
+            }
+        }
+
+    }//.compra-wrapper
+}//.compra-wrapper
+
+
+/*
+ * VIAJO / VIAJE
+*/
+.viajo-viaje-wrapper {
+    @media (min-width: $md) {
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+    }
+}
+
+.viajo {
+    color: $color-blanco;
+    padding: 40px $paddingLeftRight;
+    font-size: 12px;
+    @media (min-width: $md) {
+        width: 50%;
+    }
+    @media (min-width: $lg) {
+        font-size: 16px;
+        padding: 80px 50px 65px $paddingLeftRightLG;
+    }
+    @media (min-width: $xlg) {
+        padding: 90px 50px 70px $paddingLeftRightXLG;
+    }
+
+    img {
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 48px;
+        @media (min-width: $lg) {
+            font-size: 36px;
+        }
+    }
+
+    ul {
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+        li {
+            line-height: 12px;
+            padding-right: 7px;
+            border-right: 1px solid $color-blanco;
+            margin-left: 7px;
+            margin-bottom: 10px;
+            
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                border-right: none;
+                padding-right: 0;
+            }
+
+            a {
+                @extend .btn;
+                @extend .btn-hover-opacity;
+            }
+        }
+    }
+}
+
+.viajo-wrapper {
+    @extend .viajo;
+    background:$color-rosa;
+
+}//.viajo-wrapper
+
+.viaje-wrapper {
+    @extend .viajo;
+    background-color:$color-celeste;
+
+}//.viaje-wrapper
+
+/*
+ * INSTAGRAM
+*/
+
+.instagram-wrapper {
+    @media (min-width: $md) {
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+    }
+
+    .instagram {
+        cursor: pointer;
+        width: 100%;
+        position: relative;
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        -o-justify-content: center;
+        justify-content: center;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        height: 340px;
+        @media (min-width: $sm) {
+            height: 500px;
+        }
+        @media (min-width: $md) {
+            height: auto;
+            width: 30%;
+        }
+        /*@media (min-width: $lg) {
+            height: 420px;
+        }
+        @media (min-width: $xlg) {
+            height: 550px;
+        }*/
+
+        h2 {
+            font-family: $fuente-secundaria;
+            font-weight: 500;
+            color: $color-azul;
+            font-size: 24px;
+            line-height: 32px;
+            @media (min-width: $lg) {
+                font-size: 36px;
+                line-height: 48px;
+            }
+        }
+
+        img {
+            width: 35px;
+            @media (min-width: $lg) {
+                width: 55px;
+            }
+        }
+    }//.instagram
+
+    .wrapper-feed {
+        display: none;
+
+        @media (min-width: $md) {
+            color: $color-blanco;
+            width: 70%;
+            display: block;
+            background-color: #FF6C6C;
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -o-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            -ms-justify-content: center;
+            -o-justify-content: center;
+            justify-content: center;
+        }
+    }
+    
+}//.instagram-wrapper

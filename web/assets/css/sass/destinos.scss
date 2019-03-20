@@ -1,0 +1,319 @@
+.destinos-header {
+    background-color: #EBEAEA;
+    color: $color-negro;
+    padding: 130px 25px 35%;
+
+    @media (min-width: $md) {
+        padding: 90px $paddingLeftRight 55px;
+    }
+    @media (min-width: $lg) {
+        padding: 135px $paddingLeftRightLG 60px;
+    }
+    @media (min-width: $xlg) {
+        padding: 205px $paddingLeftRightXLG 110px;
+    }
+
+    .notice-menu {
+        position: relative;
+        color: $color-rosa;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 14px;
+        z-index: 11;
+    }
+
+    .super-title {
+        font-family: $fuente-caracteres;
+        color: transparent;
+        font-weight: 500;
+        letter-spacing: -5px;
+        font-size: 128px;
+        line-height: 120px;
+        position: relative;
+        -webkit-text-stroke: 2px $color-amarillo;
+        z-index: 1;
+
+        @media (min-width: $sm) {
+            letter-spacing: -15px;
+            font-size: 160px;
+            line-height: 128px;
+        }
+
+        @media (min-width: $lg) {
+            font-size: 240px;
+            line-height: 198px;
+            letter-spacing: -25px;
+        }
+    }//.super-title
+
+    .super-title.amarillo {
+        color: transparent;
+        -webkit-text-stroke: 2px $color-amarillo;
+    }
+
+    .super-title.rosa {
+        color: transparent;
+        -webkit-text-stroke: 2px $color-rosa;
+    }
+
+    .title-destino {
+        color: $color-negro;
+        position: relative;
+        font-size: 24px;
+        line-height: 24px;
+        margin-top: 10px;
+        margin-bottom: 60px;
+
+
+        &:after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 14px;
+            background-image: url('../images/estrellas.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+                background-image: url('../images/estrellas@2x.png');
+                background-size: contain;
+            }
+
+            @media (min-width: $lg) {
+                background-image: url('../images/estrellas.png');
+                background-size: contain;
+                width: 96px;
+                height: 16px;
+                bottom: -30px;
+            }
+
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+                background-image: url('../images/estrellas@2x.png');
+                background-size: contain;
+            }
+        }
+    }
+
+    .icon-header-destino {
+        background-color: $color-amarillo;
+        color: $color-negro;
+    }
+
+    .icon-header-destino.amarillo {
+        background-color: $color-amarillo;
+        color: $color-negro;
+    }
+}//destinos.header
+
+.destinos-page-section {
+
+    .icon-header {
+        .left-icons-header {
+            p {
+                color: $color-rosa;
+    
+                &:before {
+                    background-color: $color-rosa;
+                }
+            }
+        }
+
+        .right-icons-header {
+            color: $color-azul;
+            
+            @media (min-width: $lg) {
+                top: -920px;
+            }
+
+            @media (min-width: $xlg) {
+                //top: -1000px;
+            }
+
+            img {
+                display: inline-block;
+            }
+        }
+    }
+    .icon-vertical {
+        padding-top: 75px;
+        -webkit-align-items: flex-start;
+        -moz-align-items: flex-start;
+        -ms-align-items: flex-start;
+        -o-align-items: flex-start;
+        align-items: flex-start;
+        @media (min-width: $md) {
+            padding-top: 135px;
+        }
+    }
+
+    .icon-vertical.verde {
+        background-color: $color-verde;
+    }
+    .icon-vertical.amarillo {
+        background-color: $color-amarillo;
+    }
+    .icon-vertical.rosa {
+        background-color: $color-rosa;
+    }
+}//.destinos-wrapper
+
+.destino {
+    color: $color-negro;
+    font-size: 15px;
+    padding: 75px 30px 30px;
+    @media (min-width: $md) {
+        font-size: 16px;
+        width: 45%;
+        
+    }
+    @media (min-width: $xlg) {
+        padding: 120px 143px 120px 140px;
+    }
+
+    .destino-titulo {
+        font-family: $fuente-especial;
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 70px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        @media (min-width: $xlg) {
+            font-size: 100px;
+            line-height: 100px;
+            margin-bottom: 45px;
+        }
+
+        img {
+            width: 46px;
+            margin-left: 10px;
+            display: inline-block;
+            @media (min-width: $xlg) {
+                width: 87px;
+                margin-left: 25px;
+            }
+        }
+    }//.destino-titulo
+
+    .resumen {
+        margin-bottom: 25px;
+        font-size: 15px;
+        @media (min-width: $xlg) {
+            font-size: 18px;
+        }
+    }
+
+    .data-destino {
+        font-size: 15px;
+        @media (min-width: $xlg) {
+            font-size: 18px;
+        }
+
+        h4 {
+            font-weight: 600;
+        }
+
+        ul {
+            margin-bottom: 25px;
+        }
+    }//.data-destino
+
+}//.destino
+
+.data-extra {
+    padding: 20px 60px 30px 30px;
+    color: $color-negro;
+    background-color: #EBEAEA;
+    position: relative;
+    width: 100%;
+    @media (min-width: $md) {
+        width: 55%;
+        padding: 75px 30px 30px;
+    }
+
+    @media (min-width: $xlg) {
+        padding: 120px 143px 120px 110px;
+    }
+
+    a {
+        border: 1px solid $color-rosa;
+        color: $color-rosa;
+        margin-top: 40px;
+        @media (min-width: $md) {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        @media (min-width: $xlg) {
+            margin-bottom: 50px;
+        }
+    }
+
+    a.only-mobile {
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        @media (min-width: $md) {
+            display: none;
+        }
+    }
+
+    a.only-pc {
+        display: none;
+        @media (min-width: $md) {
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+        }
+    }
+
+    .extras {
+        margin: 20px 0;
+        @media (min-width: $md) {
+            margin: 0;
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+        }
+        @media (min-width: $xlg) {
+            margin: 20px 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 40px;
+            margin-top: 40px;
+            font-size: 15px;
+            line-height: 20px;
+            @media (min-width: $md) {
+                width: 45%;
+            }
+
+            @media (min-width: $xlg) {
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            h4 {
+                font-weight: 600;
+            }
+        }//.extra
+    }//.extras
+
+}//.data-extra 

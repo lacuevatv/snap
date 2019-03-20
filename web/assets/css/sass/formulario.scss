@@ -1,0 +1,602 @@
+/*
+ * FORMULARIO
+*/
+.external-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: 999999;
+    padding: 0;
+    background-color: transparent;
+    //display: none;
+    overflow: hidden;
+    @include transition(all 500ms);
+
+    .contenedor-formulario {
+        position: relative;
+        width: 100vw;
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        -o-justify-content: center;
+        justify-content: center;
+        padding: 0;
+
+        .formulario-wrapper {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: block;
+            padding: 60px 20px;
+            background-color: $color-blanco;
+
+            @media (min-width: $md) {
+                padding: 60px 20px;
+            }
+            @media (min-width: $lg) {
+                padding: 60px $paddingLeftRightLG;
+            }
+
+            @media (min-width: $xlg) {
+                padding: 100px $paddingLeftRightXLG;
+            }
+
+            .logo-formulario {
+                position: absolute;
+                top: 23px;
+                left: 22px;
+                width: 90px;
+
+                @media (min-width: $lg) {
+                    top: 35px;
+                    left: 40px;
+                    width: 122px;
+                }
+            }
+
+            .close-form {
+                position: absolute;
+                right: 14px;
+                top: 19px;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                display: block;
+                @include transition(all $transitionSpeed);
+    
+                @media (min-width: $md) {
+                    right: 14px;
+                    top: 19px;
+                }
+                @media (min-width: $lg) {
+                    right: 43px;
+                    top: 32px;
+                }
+                @media (min-width: $xlg) {
+                    right: 41px;
+                    top: 32px;
+                }
+    
+                &:focus {
+                    border: none;
+                    outline: none;
+                }
+    
+                &:hover {
+                    zoom: 1;
+                    filter: alpha(opacity=50);
+                    opacity: 0.5;
+                }
+    
+                .tog1 {
+                    display: inline-block;
+                    width: 30px;
+                    height: 4px;
+                    background-color: $color-azul;
+                    position: absolute;
+                    left: 10%;
+                    top: 40%;
+                    @include transform(rotate(45deg));
+                }
+    
+                .tog2 {
+                    display: inline-block;
+                    width: 30px;
+                    height: 4px;
+                    background-color: $color-azul;
+                    position: absolute;
+                    left: 10%;
+                    top: 40%;
+                    @include transform(rotate(-45deg));
+                }
+            }//.close-form
+        }//.formulario-wrapper
+    }//.contenedor-formulario
+}//.formulario-wrapper
+
+
+form {
+    position: relative;
+    @media (min-width: $md) {
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+    }
+
+
+    legend {
+        margin: 2em 0!important;
+        width: 70%;
+    }
+
+    .title-form {
+        width: 100%;
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+        @media (min-width: $md) {
+            font-size: 120%;
+        }
+    }
+    .inner-wrapper-form {
+        width: 100%;
+    }
+
+
+    .margin-left {
+        @media (min-width: $md) {
+            margin-left: .5em;
+        }
+    }
+    
+    .margin-right {
+        @media (min-width: $md) {
+            margin-right: .5em;
+        }
+    }
+
+    .loader {
+        display: none;
+        background: rgba(0,0,0,0.2) url(../images/loader-espiral.gif) no-repeat center;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-size: 20%;
+        z-index: 111;
+    }
+    .msj-form {
+        position: absolute;
+        bottom: -30px;
+        right: 10px;
+        color: red;
+        font-size: 110%;
+        text-transform: lowercase;
+        @media (min-width: $sm) {
+            bottom: -50px;
+            font-size: 100%;
+        }
+        @media (min-width: $md) {
+            bottom: -30px;
+            right: auto;
+            left: 50%;
+            @include transform(translateX(-50%));
+        }
+    }
+    
+}//form
+
+.form-group {
+    position: relative;
+    height: 40px;
+    margin-bottom: .5em;
+    border: 1px solid $color-negro;
+    @media (min-width: $xs) {
+        height: 50px;
+    }
+    @media (min-width: $sm) {
+        height: 70px;
+    }
+    @media (min-width: $md) {
+        height: 40px;
+    }
+    @media (min-width: $xlg) {
+        height: 40px;
+    }
+
+    label {
+        position: absolute;
+        top: 10px;
+        left: 7px;
+        z-index:2;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: $color-negro;
+        @include transition(all $transitionSpeedx2);
+        @media (min-width: $md) {
+            top: 8px;
+        }
+        @media (min-width: $xlg) {
+            //top: 0;
+        }
+    }
+
+    label.long-label {
+        font-size: 80%;
+        @media (min-width: $md) {
+            font-size: 100%;
+        }
+    }
+
+    label.label-col-right {
+        @media (min-width: $md) {
+            left: 5px;
+        }
+    }
+
+    //cuando el input está en focus o tiene contentenido la etiqueta se achica
+    label.on {
+        font-size: 60%;
+        top: -2px;
+        z-index:0;
+        @include transition(all $transitionSpeedx2);
+    }
+    input {
+        z-index:1;
+        height: 25px;
+        position: absolute;
+        bottom: 0;
+        left: 7px;
+        width: 90%;
+        border: 0;
+        background: transparent;
+        font-size: 100%;
+        @media (min-width: $xs) {
+            height: 30px;
+        }
+        @media (min-width: $sm) {
+            height: 30px;
+            bottom: 2px;
+        }
+        @media (min-width: $md) {
+            height: 30px;
+            bottom: 0px;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+
+    //input con contenido escrito
+    .input-on {
+        color: $color-negro!important;
+    }
+
+    input[type=number] {
+        -moz-appearance:textfield;
+        &::-webkit-inner-spin-button, &::-webkit-outer-spin-button { 
+            appearance: none; 
+            -webkit-appearance: none; 
+            margin: 0; 
+
+        }
+    }
+
+    input[type=date] {
+        -moz-appearance:textfield;
+        color: transparent;
+        &::-webkit-inner-spin-button, &::-webkit-outer-spin-button { 
+            appearance: none; 
+            -webkit-appearance: none; 
+          margin: 0; 
+        }
+
+        &::-webkit-calendar-picker-indicator {
+            display:none;
+        }
+
+        &::-webkit-datetime-edit-month-field {
+            color: inherit
+        }
+        &::-webkit-datetime-edit-day-field {
+            color: inherit
+        }
+        &::-webkit-datetime-edit-year-field {
+            color: inherit;
+        }
+    }
+
+    .msj-error-input {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        font-size: 14px;
+        color: $color-rosa;
+        width: 55%;
+        text-transform: lowercase;
+        line-height: 110%;
+        display:none;
+    }
+
+    .msj-error-input-background {
+        top: -13px;
+        padding: 3px;
+        background-color: rgba(255,255,255,0.5);
+    }
+    .msj-error-input-col {
+        right: 45px;
+    }
+
+}//.form-group 
+
+
+
+.btn-submit {
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    display: inline-block;
+    font-weight: 500;
+    background-color: $color-rosa;
+    color: $color-blanco;
+    padding: .5em 1em;
+    height: 30px;
+    text-transform: uppercase;
+    line-height: 110%;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    @include transition(all $transitionSpeed ease);
+    
+    @media (min-width: $xs) {
+        height: 50px;
+    }
+    @media (min-width: $sm) {
+        height: 70px;
+    }
+    @media (min-width: $md) {
+        height: 40px;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 70px;
+        top: 0;
+        width: 27px;
+        height: 30px;
+        background: url(../images/sprite.png) no-repeat;
+        background-position:-125px -182px;
+        @include transition(all $transitionSpeed ease);
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+            background: url(../images/sprite2x.png) no-repeat;
+            background-size: 324px 305px;
+            background-position:-125px -182px;
+        }
+        @media (min-width: $xs) {
+            height: 30px;
+            width: 37px;
+            background-position:-150px -182px;
+            left: 90px;
+            top: 12px
+        }
+        @media (min-width: $sm) {
+            left: 140px;
+            top: 22px
+        }
+        @media (min-width: $md) {
+            height: 30px;
+            width: 24px;
+            background-position: -125px -182px;
+            left: 76px;
+            top: 6px;
+        }
+    }//after
+
+    &:hover {
+        background-color: $color-azul;
+        color: $color-negro;
+        @include transition(all $transitionSpeed ease-out);
+        zoom: 1;
+        filter: alpha(opacity=90);
+        opacity: 0.9;
+        @media (min-width: $md) {
+            &:after {
+                left: 80px;
+                background-position: -101px -182px;
+            }
+        }
+
+    }//hover
+}
+
+//formulario questions
+.wrapper-questions {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: block;
+    margin: 10% 0 10%;
+
+    @media (min-width: $md) {
+        height: 210px;
+    }
+
+    @media (min-width: $xlg) {
+        height: 250px;
+    }
+
+    .form-group-question {
+        border: none;
+        position: absolute;
+        width: 100%;
+        max-width: 770px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+
+        .form-group {
+            border: none;
+            border-bottom: 1px solid #585955;
+            label {
+                display: none;
+            }
+
+            input {
+                color: #585955;
+                font-size: 36px;
+                line-height: 66px;
+                height: 120%;
+            }
+    
+            .next-question-btn {
+                cursor: pointer;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                @include transform(translateY(-50%));
+                background-image: url('../images/arrow-griz.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+
+                @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+                    background-image: url('../images/arrow-griz@2x.png');
+                    background-size: contain;
+                }
+
+                &:hover {
+                    zoom: 1;
+                    filter: alpha(opacity=50);
+                    opacity: 0.5;
+                }
+            }//.next-question-btn
+        }//.form-group
+        
+        .question {
+            color: $color-azul;
+            font-size: 26px;
+            line-height: 36px;
+            margin-bottom: 10px;
+
+            @media (min-width: $md) {
+                font-size: 36px;
+                line-height: 66px;
+                margin-bottom: 20px;
+            }
+        }//.question
+
+        .aclaracion {
+            font-size: 14px;
+            color: #585955;
+            margin-top: 30px;
+        }//.aclaracion
+        
+    }//.form-group-question
+
+    .form-group-question.activate {
+        display: block;
+    }
+}//.wrapper-questions
+
+.msj-respuesta {
+    font-size: 36px;
+    line-height: 66px;
+    text-align: center;
+    padding: 40px 0;
+    color: $color-azul;
+}
+
+.indice-formulario {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-azul;
+
+    .input-activate {
+        position: relative;
+    }
+    
+    .input-total {
+        margin: 0 5px;
+        position: relative;
+        padding-left: 40px;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            left: 0;
+            width: 30px;
+            height: 1px;
+            background-color: $color-azul;
+        }
+    }
+
+    button {
+        color: $color-azul;
+        font-size: 14px;
+        line-height: 16px;
+        cursor: pointer;
+        display: block;
+        
+        &:hover {
+            zoom: 1;
+            filter: alpha(opacity=50);
+            opacity: 0.5;
+        }
+    }
+
+    #previous-question {
+        display: none;
+    }
+}//.indice-formulario

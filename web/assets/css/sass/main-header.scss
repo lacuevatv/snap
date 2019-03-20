@@ -1,0 +1,308 @@
+/*
+ * main-header
+*/
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 111111;
+    background-color: transparent;
+    height: 70px;
+    width: 100%;
+    border-bottom:1px solid $color-amarillo;
+    @include transition(all $transitionSpeed);
+
+    @media (min-width: $lg) {
+        height: 100px;
+    }
+}//.main-header
+
+.main-header-down {
+    @include transform(translateY(-120px));
+}
+
+.navbar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    z-index: 9;
+
+    .brand-name {
+        background-color: $color-amarillo;
+        width: 135px;
+        height: 100%;
+        position: relative;
+        @media (min-width: $lg) {
+            width: 200px;
+        }
+
+        img {
+            width: 90%;
+            max-width: 90px;
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transform(translate3d(-50%,-50%,0));
+
+            @media (min-width: $lg) {
+                max-width: 120px;
+            }
+        }
+    }//.brand-name
+    
+    .tagline {
+        display: none;
+        @media (min-width: $lg) {
+            color: $color-blanco;
+            display: block;
+            position: absolute;
+            left: 230px;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        .line {
+            position: absolute;
+            width: 15px;
+            height: 1.5px;
+            background-color: $color-blanco;
+            right: 0;
+            top: 10px;
+        }
+    }//.tagline
+
+    /*
+    * toogle
+    */
+    .toggle {
+        position: relative;
+        top: 0;
+        right: 0;
+        z-index: 111;
+        cursor: pointer;
+        display: block;
+        border: none;
+        height: 70px;
+        width: 70px;
+        background-color: $color-amarillo;
+        @include transition(all $transitionSpeed);
+
+        @media (min-width: $lg) {
+            height: 100px;
+            width: 100px;
+        }
+
+        &:focus {
+            border: none;
+            outline: none;
+        }
+
+        .tog1 {
+            display: inline-block;
+            width: 24px;
+            height: 3px;
+            background-color: $color-azul;
+            position: absolute;
+            left: 50%;
+            top: 43%;
+            @include transition(all $transitionSpeed);
+            @include transform(translate3D(-50%,-50%,0));
+            @include border-radius(5px);
+            @media (min-width: $lg) {
+                top: 43%;
+                width: 24px;
+            }
+        }
+        
+        .tog2 {
+            display: inline-block;
+            width: 24px;
+            height: 3px;
+            background-color: $color-azul;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            @include transition(all $transitionSpeed);
+            @include transform(translate3D(-50%,-50%,0));
+            @include border-radius(5px);
+            @media (min-width: $lg) {
+                width: 24px;
+            }
+        }
+        
+        .tog3 {
+            display: inline-block;
+            width: 24px;
+            height: 3px;
+            background-color: $color-azul;
+            position: absolute;
+            left: 50%;
+            top: 58%;
+            @include transform(translate3D(-50%,-50%,0));
+            @include transition(all $transitionSpeed);
+            @include border-radius(5px);
+            @media (min-width: $lg) {
+                top: 57%;
+            }
+        }
+
+    }//.toggle
+
+    .toggle-open {
+        background-color: transparent;
+        position: fixed;
+        .tog2 {
+            display: none;
+        }
+        .tog1 {
+            @include transform(rotate(45deg));
+            left: 40%;
+            top: initial;
+            background-color: $color-blanco;
+        }
+        .tog3 {
+            @include transform(rotate(-45deg));
+            background-color: $color-blanco;
+            left: 40%;
+            top: initial;
+        }
+    }//.toggle-open
+
+
+    /*
+    * MAIN MENU
+    */
+    .main-menu-wrapper {
+        position: fixed;
+        z-index: 11;
+        background-color:$color-rosa;
+        color: $color-blanco;
+        font-size: 16px;
+        line-height: 30px;
+        top: 0;
+        height: 100vh;
+        width: 75%;
+        max-width: 675px;
+        right: -300px;
+        opacity: 0;
+        display: flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+        -ms-justify-content: space-around;
+        -o-justify-content: space-around;
+        justify-content: space-around;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        padding: 120px 10px 30px 30px;
+        padding-top: 20%;
+        padding-bottom: 12%;
+        @media (min-width: $sm) {
+            padding-top: 9%;
+            padding-bottom: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+            width: 35%;
+            font-size: 18px;
+            line-height: 36px;
+        }
+
+        @media (min-width: $xlg) {
+            padding: 250px 80px 200px 138px;
+            padding-top: 10%;
+            padding-bottom: 7%;
+            padding-left: 5%;
+            padding-right: 5%;
+            width: 35%;
+            font-size: 24px;
+            line-height: 48px;
+        }
+
+        .menu-contacto {
+            font-size: 12px;
+            line-height: 36px;
+            @media (min-width: $xlg) {
+                font-size: 14px;
+            }
+        }
+
+    }//.main-menu-wrapper
+
+    .legales-header {
+        color: $color-rosa;
+        z-index: 2;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        position: absolute;
+        bottom: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        display: none;
+        @media (min-width: $sm) {
+            bottom: 10px;
+        }
+        @media (min-width: $md) {
+            display: flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -o-align-items: center;
+            align-items: center;
+            margin: 0;
+            bottom: initial;
+            top: 0;
+            right: 150px;
+            height: 70px;
+            padding-bottom: 0;
+        }
+        @media (min-width: $lg) {
+            height: 100px;
+        }
+
+        p {
+            font-size: 8px;
+            font-family: $fuente-secundaria;
+            font-weight: 500;
+            text-align: center;
+            line-height: 10px;
+
+            @media (min-width: 370px) {
+                font-size: 9px;
+            }
+
+            @media (min-width: 400px) {
+                font-size: 10px;
+                line-height: 12px;
+            }
+            @media (min-width: $lg) {
+                text-align: right;
+            }
+        }
+    }
+}//.navbar

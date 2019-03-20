@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg2428"
+   version="1.1"
+   viewBox="0 0 5.7149611 5.2916665"
+   height="5.2916665mm"
+   width="5.7149611mm">
+  <defs
+     id="defs2422" />
+  <metadata
+     id="metadata2425">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-213.3449,-236.90178)"
+     id="layer1">
+    <g
+       id="g2407"
+       transform="matrix(0.26458333,0,0,0.26458333,159.88393,326.52182)">
+      <g
+         id="g1623"
+         transform="translate(209.17314,-337.1429)"
+         class="c"
+         style="fill:none;stroke:#2b00ff;stroke-width:1.579px;stroke-miterlimit:10">
+        <ellipse
+           id="ellipse1619"
+           ry="4.737"
+           rx="3.684"
+           cy="4.737"
+           cx="3.684"
+           class="e"
+           style="stroke:none" />
+        <ellipse
+           id="ellipse1621"
+           ry="5.526"
+           rx="4.474"
+           cy="4.737"
+           cx="3.684"
+           class="f"
+           style="fill:none" />
+      </g>
+      <path
+         id="path1625"
+         d="m 208.12014,-325.8269 a 6.009,6.009 0 0 0 -5.263,6.316 h 20 a 6.009,6.009 0 0 0 -5.263,-6.316"
+         class="d"
+         style="fill:none;stroke:#2b00ff;stroke-width:1.579px;stroke-linecap:round;stroke-linejoin:round" />
+    </g>
+  </g>
+</svg>

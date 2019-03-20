@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3043"
+   version="1.1"
+   viewBox="0 0 2.9765521 5.3305453"
+   height="20.146942"
+   width="11.249961"
+   sodipodi:docname="flecha-azul.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1869"
+     inkscape:window-height="1025"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="11.713936"
+     inkscape:cx="5.6249804"
+     inkscape:cy="10.073471"
+     inkscape:window-x="51"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3043" />
+  <defs
+     id="defs3037" />
+  <metadata
+     id="metadata3040">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(154.19036,-107.61479)"
+     id="layer1"
+     style="fill:#003e6f;fill-opacity:1">
+    <path
+       id="path3012"
+       d="m -153.81731,107.67828 a 0.21889374,0.21889374 0 0 0 -0.30956,0.30956 l 2.32833,2.33469 -2.32833,2.25319 a 0.219075,0.219075 0 0 0 0.30956,0.30983 l 2.6035,-2.56302 z"
+       class="b"
+       style="fill:#003e6f;stroke-width:0.26458332;fill-opacity:1" />
+  </g>
+</svg>

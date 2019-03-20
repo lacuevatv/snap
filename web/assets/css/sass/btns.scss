@@ -1,0 +1,300 @@
+.btn {
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    @include transition(all $transitionSpeed);
+}
+.btn-hover-opacity {
+    &:hover {
+        zoom: 1;
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
+}
+
+.btn-hover-pulse {
+    &:hover, &:active, &:focus {
+        -webkit-animation-name: hvr-pulse;
+        animation-name: hvr-pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+    }
+}
+
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+
+
+.btn-hover-icon-pulse {
+  &:hover {
+    img {
+      -webkit-animation-name: hvr-icon-pulse;
+      animation-name: hvr-icon-pulse;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+
+.btn-icon-left {
+    @extend .btn;
+    @extend .btn-hover-opacity;
+    
+    img {
+        padding-right: 10px;
+        vertical-align: middle;
+    }
+}
+
+.btn-icon-left-notransition {
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    @extend .btn-hover-opacity;
+    
+    img {
+        padding-right: 10px;
+        vertical-align: middle;
+    }
+}
+
+.icon-btn-right {
+    @extend .btn;
+    @extend .btn-hover-icon-pulse;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 45px;
+    width: 165px;
+    @include border-radius(150px);
+    padding-left: 15px;
+    padding-right: 12px;
+    font-size: 14px;
+    padding-top: 2px;
+
+    @media (min-width: $xlg) {
+        font-size: 16px;
+        padding-left: 35px;
+        padding-right: 25px;
+        height: 60px;
+        width: 220px;
+        height: 55px;
+        width: 210px;
+    }
+
+    img {
+        vertical-align: middle;
+        width: 15px;
+        position: relative;
+        top: -1px;
+        @media (min-width: $xlg) {
+            width: 19px;
+        }
+    }
+}
+
+$duration: 500ms;
+$button-height: 60px;
+$button-width: 200px;
+$tooltip-height: 60px;
+$tooltip-width: 140px;
+
+.Button__element {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.Button__transitionable {
+    transition: top $duration;
+}
+
+.icon-download {
+    display: inline-block;
+    position: relative;
+    //background-color: transparent;
+    //color: #fff;
+    font-size: 18px;
+    border-radius: 1000px;
+    width: $button-width;
+    height: $button-height;
+    //box-shadow: 0 2px 20px rgba(#000, 0.7), inset 0 1px rgba(#fff, 0.3);
+    text-align: center;
+    transition: background-color $duration, transform 100ms;
+
+    &__textWrapper {
+        @extend .Button__element;
+        overflow: hidden;
+      }
+      
+      &__text {
+        @extend .Button__element;
+        @extend .Button__transitionable;
+        line-height: $button-height;
+        top: 0;
+        left: 0;
+      }
+      
+      &__icon {
+        @extend .Button__element;
+        @extend .Button__transitionable;
+        top: 100%;
+        width: 22px!important;
+        left: 50%;
+        @include transform(translateX(-50%));
+        //background: url('https://cl.ly/0X3o100h2H0g/icon-download.svg') no-repeat center center;
+      }
+      
+      // Tooltip
+      &::before {
+        content: attr(data-tooltip);
+        width: $tooltip-width;
+        height: $tooltip-height;
+        background-color: $color-amarillo;
+        font-size: 1rem;
+        border-radius: .25em;
+        line-height: $tooltip-height;
+        bottom: 90px;
+        left: calc(50% - 70px);
+      }
+      
+      &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-top-color: $color-amarillo;
+        left: calc(50% - 10px);
+        bottom: 70px;
+      }
+      
+      &::before,
+      &::after {
+        position: absolute;
+        opacity: 0;
+        transition: all $duration;
+        visibility: hidden;
+      }
+      
+      //- button hover
+      &:hover {
+        background-color: transparent;
+        
+        .icon-download__text { top: -100%; }
+        
+        .icon-download__icon { top: 0; }
+        
+        &::before,
+        &::after {
+          opacity: 1;
+          visibility: visible;
+        }
+        
+        &::after { bottom: 60px; }
+        
+        &::before { bottom: 80px; }
+      }
+      
+      &:active { transform: translate(2px, 2px); }
+}
+
+/* Icon Pulse */
+@-webkit-keyframes hvr-icon-pulse {
+  25% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+@keyframes hvr-icon-pulse {
+  25% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+.hvr-icon-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-icon-pulse .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-icon-pulse:hover .hvr-icon, .hvr-icon-pulse:focus .hvr-icon, .hvr-icon-pulse:active .hvr-icon {
+  -webkit-animation-name: hvr-icon-pulse;
+  animation-name: hvr-icon-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
