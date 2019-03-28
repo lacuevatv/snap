@@ -5,17 +5,16 @@
                 <source srcset="<?php echo IMAGES; ?>logo-footer.png 1x, <?php echo IMAGES; ?>logo-footer@2x.png 2x" media="(min-width: 315px)">
                 <img class="fleek-logo-footer" src="<?php echo IMAGES; ?>logo-footer.png" alt="Logo Fleek">
             </picture>
-			<p>Concursos y promociones vigentes</p>
 		</div>
 
-		<div id="contacto" class="footer-wrapper row-reverse-dk">
+		<div id="contacto" class="footer-wrapper">
 			<ul class="contacto">
+				<li>Concursos y promociones vigentes<li>
 				<li>
 					<a class="btn-icon-left" href="<?php echo WHATSAPPLINK; ?>" target="_blank">
 						<picture>
-							<source srcset="<?php echo IMAGES; ?>wa-icon.svg" type="image/svg+xml">
-							<source srcset="<?php echo IMAGES; ?>wa-icon.png 1x, <?php echo IMAGES; ?>wa-icon@2x.png 2x" media="(min-width: 315px)">
-							<img src="<?php echo IMAGES; ?>wa-icon.png" alt="Icon Whatsapp">
+							<source srcset="<?php echo IMAGES; ?>whatsapp.png 1x, <?php echo IMAGES; ?>whatsapp@2x.png 2x" media="(min-width: 315px)">
+							<img src="<?php echo IMAGES; ?>whatsapp.png" alt="Icon Whatsapp">
 						</picture>
 						<?php echo WHATSAPP; ?>
 					</a>
@@ -23,9 +22,8 @@
 				<li>
 					<a class="btn-icon-left" href="<?php echo LINK_INSTAGRAM; ?>" target="_blank">
 						<picture>
-							<source srcset="<?php echo IMAGES; ?>instagram-icon.svg" type="image/svg+xml">
-							<source srcset="<?php echo IMAGES; ?>instagram-icon.png 1x, <?php echo IMAGES; ?>instagram-icon@2x.png 2x" media="(min-width: 315px)">
-							<img src="<?php echo IMAGES; ?>instagram-icon.png" alt="Icon Instagram">
+							<source srcset="<?php echo IMAGES; ?>instagram-nuevo.png 1x, <?php echo IMAGES; ?>instagram-nuevo@2x.png 2x" media="(min-width: 315px)">
+							<img src="<?php echo IMAGES; ?>instagram-nuevo.png" alt="Icon Instagram">
 						</picture>
 						<?php echo '@'.INSTAGRAM; ?>
 					</a>
@@ -33,9 +31,8 @@
 				<li>
 					<a class="btn-icon-left" href="mailto:<?php echo EMAIL; ?>" target="_blank">
 						<picture>
-							<source srcset="<?php echo IMAGES; ?>email-icon.svg" type="image/svg+xml">
-							<source srcset="<?php echo IMAGES; ?>email-icon.png 1x, <?php echo IMAGES; ?>email-icon@2x.png 2x" media="(min-width: 315px)">
-							<img src="<?php echo IMAGES; ?>email-icon.png" alt="Icon Email">
+							<source srcset="<?php echo IMAGES; ?>email.png 1x, <?php echo IMAGES; ?>email@2x.png 2x" media="(min-width: 315px)">
+							<img src="<?php echo IMAGES; ?>email.png" alt="Icon Email">
 						</picture>
 						<?php echo EMAIL; ?>
 					</a>
@@ -48,11 +45,33 @@
 					<address>
 						Dir. Ricardone 1319 - [CP 2000]
 					</address>
-					<p>
-						Tel./Fax. [54 341] 528.9819/20<br>
-						Wap. 341.3402306<br>
-						rosario@aucklandturismo.com<br>
-						Skype. Auckland.Rosario
+					<p class="btn-icon-left">
+						<picture>
+							<source srcset="<?php echo IMAGES; ?>telf.png 1x, <?php echo IMAGES; ?>telf@2x.png 2x" media="(min-width: 315px)">
+							<img src="<?php echo IMAGES; ?>telf.png" alt="Icon Telephone">
+						</picture>
+						[54 341] 528.9819/20
+					</p>
+					<p class="btn-icon-left">
+						<picture>
+							<source srcset="<?php echo IMAGES; ?>whatsapp.png 1x, <?php echo IMAGES; ?>whatsapp@2x.png 2x" media="(min-width: 315px)">
+							<img src="<?php echo IMAGES; ?>whatsapp.png" alt="Icon Whatsapp">
+						</picture>
+						341.3402306
+					</p>
+					<p class="btn-icon-left">
+						<picture>
+							<source srcset="<?php echo IMAGES; ?>email.png 1x, <?php echo IMAGES; ?>email@2x.png 2x" media="(min-width: 315px)">
+							<img src="<?php echo IMAGES; ?>email.png" alt="Icon Email">
+						</picture>
+						rosario@aucklandturismo.com
+					</p>
+					<p class="btn-icon-left">
+						<picture>
+							<source srcset="<?php echo IMAGES; ?>skype.png 1x, <?php echo IMAGES; ?>skype@2x.png 2x" media="(min-width: 315px)">
+							<img src="<?php echo IMAGES; ?>skype.png" alt="Icon Skype">
+						</picture>
+						Auckland.Rosario
 					</p>
 				</li>
 
@@ -61,11 +80,33 @@
 					<address>
 						Dir. Pellegrini 225 - [CP 2900]
 					</address>
-					<p>
-						Tel. [0364] 426454<br>
-						Wap. 336.4387271<br>
-						sannicolas@aucklandturismo.com<br>
-						Skype. Auckland.SanNicolas
+					<p class="btn-icon-left">
+						<picture>
+							<source srcset="<?php echo IMAGES; ?>telf.png 1x, <?php echo IMAGES; ?>telf@2x.png 2x" media="(min-width: 315px)">
+							<img src="<?php echo IMAGES; ?>telf.png" alt="Icon Telephone">
+						</picture>
+						[0364] 426454
+					</p>
+					<p class="btn-icon-left">
+						<picture>
+							<source srcset="<?php echo IMAGES; ?>whatsapp.png 1x, <?php echo IMAGES; ?>whatsapp@2x.png 2x" media="(min-width: 315px)">
+							<img src="<?php echo IMAGES; ?>whatsapp.png" alt="Icon Whatsapp">
+						</picture>
+						336.4387271
+					</p>
+					<p class="btn-icon-left">
+						<picture>
+							<source srcset="<?php echo IMAGES; ?>email.png 1x, <?php echo IMAGES; ?>email@2x.png 2x" media="(min-width: 315px)">
+							<img src="<?php echo IMAGES; ?>email.png" alt="Icon Email">
+						</picture>
+						sannicolas@aucklandturismo.com
+					</p>
+					<p class="btn-icon-left">
+						<picture>
+							<source srcset="<?php echo IMAGES; ?>skype.png 1x, <?php echo IMAGES; ?>skype@2x.png 2x" media="(min-width: 315px)">
+							<img src="<?php echo IMAGES; ?>skype.png" alt="Icon Skype">
+						</picture>
+						Auckland.SanNicolas
 					</p>
 				</li>
 
@@ -74,11 +115,33 @@
 					<address>
 						Dir. Mitre 844 [CP 2700]
 					</address>
-					<p>
-						Tel. [54 2477] 459613<br>
-						Wap. 2477.459613<br>
-						pergamino@aucklandturismo.com<br>
-						Skype. Auckland.Pergamino
+					<p class="btn-icon-left">
+						<picture>
+							<source srcset="<?php echo IMAGES; ?>telf.png 1x, <?php echo IMAGES; ?>telf@2x.png 2x" media="(min-width: 315px)">
+							<img src="<?php echo IMAGES; ?>telf.png" alt="Icon Telephone">
+						</picture>
+						[54 2477] 459613
+					</p>
+					<p class="btn-icon-left">
+						<picture>
+							<source srcset="<?php echo IMAGES; ?>whatsapp.png 1x, <?php echo IMAGES; ?>whatsapp@2x.png 2x" media="(min-width: 315px)">
+							<img src="<?php echo IMAGES; ?>whatsapp.png" alt="Icon Whatsapp">
+						</picture>
+						2477.459613
+					</p>
+					<p class="btn-icon-left">
+						<picture>
+							<source srcset="<?php echo IMAGES; ?>email.png 1x, <?php echo IMAGES; ?>email@2x.png 2x" media="(min-width: 315px)">
+							<img src="<?php echo IMAGES; ?>email.png" alt="Icon Email">
+						</picture>
+						pergamino@aucklandturismo.com
+					</p>
+					<p class="btn-icon-left">
+						<picture>
+							<source srcset="<?php echo IMAGES; ?>skype.png 1x, <?php echo IMAGES; ?>skype@2x.png 2x" media="(min-width: 315px)">
+							<img src="<?php echo IMAGES; ?>skype.png" alt="Icon Skype">
+						</picture>
+						Auckland.Pergamino
 					</p>
 				</li>
 			</ul>
