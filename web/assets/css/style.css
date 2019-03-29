@@ -299,6 +299,21 @@ html, body {
   }
 }
 
+.wrapper-whatsapp-movil {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  z-index: 111;
+}
+@media (min-width: 768px) {
+  .wrapper-whatsapp-movil {
+    display: none;
+  }
+}
+.wrapper-whatsapp-movil img {
+  width: 90px;
+}
+
 /*--------------------------------------------------------------
 5.0 BTNS
 --------------------------------------------------------------*/
