@@ -202,7 +202,7 @@ $tooltip-width: 140px;
       }
       
       // Tooltip
-      &::before {
+      /*&::before {
         content: attr(data-tooltip);
         width: $tooltip-width;
         height: $tooltip-height;
@@ -230,7 +230,7 @@ $tooltip-width: 140px;
         opacity: 0;
         transition: all $duration;
         visibility: hidden;
-      }
+      }*/
       
       //- button hover
       &:hover {

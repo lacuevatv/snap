@@ -475,6 +475,35 @@ html, body {
   height: 60px;
   text-align: center;
   transition: background-color 500ms, transform 100ms;
+  /*&::before {
+    content: attr(data-tooltip);
+    width: $tooltip-width;
+    height: $tooltip-height;
+    background-color: $color-amarillo;
+    font-size: 1rem;
+    border-radius: .25em;
+    line-height: $tooltip-height;
+    bottom: 90px;
+    left: calc(50% - 70px);
+  }
+
+  &::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: $color-amarillo;
+    left: calc(50% - 10px);
+    bottom: 70px;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    opacity: 0;
+    transition: all $duration;
+    visibility: hidden;
+  }*/
 }
 .icon-download__textWrapper {
   overflow: hidden;
@@ -492,32 +521,6 @@ html, body {
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-}
-.icon-download::before {
-  content: attr(data-tooltip);
-  width: 140px;
-  height: 60px;
-  background-color: #FFDF00;
-  font-size: 1rem;
-  border-radius: 0.25em;
-  line-height: 60px;
-  bottom: 90px;
-  left: calc(50% - 70px);
-}
-.icon-download::after {
-  content: "";
-  width: 0;
-  height: 0;
-  border: 10px solid transparent;
-  border-top-color: #FFDF00;
-  left: calc(50% - 10px);
-  bottom: 70px;
-}
-.icon-download::before, .icon-download::after {
-  position: absolute;
-  opacity: 0;
-  transition: all 500ms;
-  visibility: hidden;
 }
 .icon-download:hover {
   background-color: transparent;
@@ -1843,13 +1846,13 @@ html, body {
 }
 @media (min-width: 1200px) {
   .wrapper-slider-testimonios .experiencia-data {
-    padding: 50px 100px 100px;
+    padding: 50px 100px 100px 100px;
     height: 360px;
   }
 }
 @media (min-width: 1600px) {
   .wrapper-slider-testimonios .experiencia-data {
-    padding: 80px 140px 100px;
+    padding: 80px 80px 100px 140px;
     height: 540px;
   }
 }
@@ -1871,12 +1874,16 @@ html, body {
     margin-bottom: 100px;
   }
 }
+@media (min-width: 1200px) {
+  .wrapper-slider-testimonios .experiencia-data .title-experiencia {
+    max-width: initial;
+  }
+}
 @media (min-width: 1600px) {
   .wrapper-slider-testimonios .experiencia-data .title-experiencia {
     margin-bottom: 150px;
     font-size: 100px;
     line-height: 84px;
-    max-width: 600px;
   }
 }
 .wrapper-slider-testimonios .experiencia-data .nombre-experiencia {
@@ -2027,6 +2034,7 @@ html, body {
 }
 .section-compra .compra-wrapper h2 {
   font-size: 24px;
+  line-height: 24px;
   margin-bottom: 20px;
   color: #fff;
 }

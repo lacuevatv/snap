@@ -93,16 +93,16 @@ getTemplate( 'header' ); ?>
         <div class="compra-wrapper">
             <h2>
                 <span class="only-mobile">
-                    Comprá tu viaje para tu hijo/a con un solo click.
+                    Hacé la reserva para tu grupo en forma online con un solo click.
                 </span>
                 <span class="only-pc">
-                    Comprá tu viaje para tu hijo/a con un solo click.
+                    Hacé la reserva para tu grupo en forma online con un solo click.
                 </span>
             </h2>
             
-            <p class="texto-azul-pc">
+            <!--<p class="texto-azul-pc">
                 Hacé la reserva para tu grupo en forma online.
-            </p>
+            </p>-->
 
             <div class="wrapper-button">
                 <a class="icon-btn-right open-form" href="#compra-online">
@@ -130,21 +130,21 @@ getTemplate( 'header' ); ?>
                 <img src="<?php echo IMAGES; ?>hapyface.png" alt="Icon Whatsapp">
             </picture>
             <h3>
-            Va a viajar
+            Tu hijo va a viajar
             </h3>
             <ul>
                 <li>
-                    <a href="#" target="_blank">
+                    <a href="http://auckland.cloudapp.net/Account/Login" target="_blank">
                         Inscripciones
                     </a>
                 </li>
                 <li>
-                    <a href="#" target="_blank">
+                    <a href="http://auckland.cloudapp.net/Account/Login" target="_blank">
                         Cupones de Pago
                     </a>
                 </li>
                 <li>
-                    <a href="#" target="_blank">
+                    <a href="http://auckland.cloudapp.net/Account/Login" target="_blank">
                         Ficha Médica
                     </a>
                 </li>
@@ -165,7 +165,7 @@ getTemplate( 'header' ); ?>
                 Ya viajó
             </h3>
             <p>
-                Encontrá las mejores imágenes de tu viaje.
+                Encontrá las mejores imágenes de su viaje.
             </p>
         </div>
     </section>

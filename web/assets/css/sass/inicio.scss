@@ -679,11 +679,11 @@
             height: 360px;
         }
         @media (min-width: $lg) {
-            padding: 50px $paddingLeftRightLG 100px;
+            padding: 50px $paddingLeftRightLG 100px $paddingLeftRightLG;
             height: 360px;
         }
         @media (min-width: $xlg) {
-            padding: 80px $paddingLeftRightXLG 100px;
+            padding: 80px 80px 100px $paddingLeftRightXLG;
             height: 540px;
         }
 
@@ -702,12 +702,13 @@
             @media (min-width: $md) {
                 margin-bottom: 100px;
             }
-
+            @media (min-width: $lg) {
+                max-width: initial;
+            }
             @media (min-width: $xlg) {
                 margin-bottom: 150px;
                 font-size: 100px;
                 line-height: 84px;
-                max-width: 600px;
             }
         }
 
@@ -852,6 +853,7 @@
 
         h2 {
             font-size: 24px;
+            line-height: 24px;
             margin-bottom: 20px;
             //color: $color-azul;
             color: $color-blanco;

@@ -19,31 +19,31 @@ $villaCarlosPazData = array(
     ),
     'color' => 'amarillo',
     'titulo' => 'Villa Carlos Paz',
-    'titulo2' => 'Carlos Paz',
+    'titulo2' => '¡Elegí Villa Carlos Paz!',
     'icon' => array('svg' => 'bariloche-icon-top.svg', '1X' => 'bariloche-icon-top.png', '2X' => 'bariloche-icon-top@2x.png'),
-    'resumen' => '<p>Es el viaje de egresados a Bariloche más completo de todas las opciones que existen en el país. Te incluye actividades premium todos los días y noches del programa, y te garantiza la mayor cantidad de días de nieve. Además, tiene la particularidad de incluir tres centros invernales, con los servicios de montaña más exclusivos en cada uno. Cerro Catedral, Cerro Otto y Cerro Bayo, reconocido como un centro de ski boutique.</p>',
+    'resumen' => '<p>Te proponemos un viaje de egresados distinto, en el que los chicos van a disfrutar de las actividades más completas, dinámicas e impactantes, en los lugares más prestigiosos y seguros de la región. Nuestros planes ofrecen una gran variedad de opciones para todos los gustos y cubren todos los días de la estadía en la ciudad.</p>',
     'dataDestino' => array(
         array( 'titulo' => 'Duración', 'lista' => array( '11 Días totales' ) ),
-        array( 'titulo' => 'Destinos', 'lista' => array( 'San Carlos de Bariloche', 'Villa La Angostura' ) ),
-        array( 'titulo' => 'Noches de alojamiento', 'lista' => array( '08 Noches totales', '06 Noches en Bariloche', '02 Noches en Villa la Angostura' ) ),
+        array( 'titulo' => 'Destinos', 'lista' => array( 'Villa Carlos Paz' ) ),
+        array( 'titulo' => 'Noches de alojamiento', 'lista' => array( '08 Noches en Villa Carlos Paz' ) ),
     ),
     'pdf' => '#',
     'pdf_size' => '50MB',
     'extra' => array(
-        array('titulo' => 'Días de nieve', 
+        /*array('titulo' => 'Días de nieve', 
             'icon' => array('svg' => 'nieve-icon.svg', '1X' => 'nieve-icon.png', '2X' => 'nieve-icon@2x.png'),
             'data' => array('Visita al Cerro Catedral', 'Piedras Blancas', 'Otto House Music', 'Montaña Boutique', 'Ski & Snowboard Selec.')
         ),
         array('titulo' => 'Actividades exclusivas',
             'icon' => array('svg' => 'actividades-icon.svg', '1X' => 'actividades-icon.png', '2X' => 'actividades-icon@2x.png'),
             'data' => array('Fiesta de Bienvenida', 'After Ski', 'Previa de Encuentro',' Cena de velas', 'Ice Bar Bariloche', 'Fiesta de Despedida')
+        ),*/
+        array('titulo' => 'Opciones de Excursiones', 'icon' => array('svg' => 'excursiones-icon.svg', '1X' => 'excursiones-icon.png', '2X' => 'excursiones-icon@2x.png'),
+         'data' => array('Peko´s', 'Mundo Fantástico', 'Vértigo Acuático', 'Parque Siquiman', 'Frampie CocoGuana', 'El Pinar', 'Bahía Los Mimbres', 'Aventura Auckland', 'Acuatitobogan', 'Fly Rock', 'Aventura 4X4','Dique San Roque', 'Bosque Aventura', 'Tío Joe', 'Casa de Casper', 'Wavezone', 'Valle del Buitre', 'Crazy Donkey', 'Fogón' )
         ),
-        array('titulo' => 'Excursiones', 'icon' => array('svg' => 'excursiones-icon.svg', '1X' => 'excursiones-icon.png', '2X' => 'excursiones-icon@2x.png'),
-         'data' => array('Speed Mountain', 'Auckland Day', 'Fourtrax 4x4', 'Zip line', 'Fábricas regionales', 'Día de campo', 'Paint ball', 'Isla Victoria', 'Bosque arrayanes' )
-        ),
-        array('titulo' => 'Fiestas Fleek',
+        array('titulo' => 'Programa nocturno',
             'icon' => array('svg' => 'estrella-outline.svg', '1X' => 'estrella-outline.png', '2X' => 'estrella-outline@2x.png'),
-            'data' => array('Noche de Disfraces', 'Painting Party', 'Stickers War', 'Fiesta Fluor', 'Mardi Gras', 'Fiesta Bizarra', 'Fiesta del Estudiante', 'Fiesta Argentina', 'Noche de Encuentro', 'White Experience')
+            'data' => array('Keop’s', 'Khalama', 'Molino Rojo', 'Paraíso Perdido', 'Fiesta de Disfraces' ,'Cena de Graduados')
         ), 
     ),
 );
@@ -63,31 +63,31 @@ $sanRafaelData = array(
     ),
     'color' => 'amarillo',
     'titulo' => 'San Rafael',
-    'titulo2' => 'San Rafael',
+    'titulo2' => '¡Elegí San Rafael de Mendoza! ',
     'icon' => array('svg' => 'cancun-icon-top.svg', '1X' => 'cancun-icon-top.png', '2X' => 'cancun-icon-top@2x.png'),
-    'resumen' => '<p>Es el viaje de egresados a Bariloche más completo de todas las opciones que existen en el país. Te incluye actividades premium todos los días y noches del programa, y te garantiza la mayor cantidad de días de nieve. Además, tiene la particularidad de incluir tres centros invernales, con los servicios de montaña más exclusivos en cada uno. Cerro Catedral, Cerro Otto y Cerro Bayo, reconocido como un centro de ski boutique.</p>',
+    'resumen' => '<p>Tenemos una propuesta distinta, para que los egresados puedan vivir un viaje único, en el que los chicos van a disfrutar de las actividades más completas, dinámicas e impactantes, en los lugares más prestigiosos y seguros de la región. Nuestros planes ofrecen una gran variedad de opciones para todos los gustos y cubren todos los días de la estadía en la ciudad.</p>',
     'dataDestino' => array(
         array( 'titulo' => 'Duración', 'lista' => array( '11 Días totales' ) ),
-        array( 'titulo' => 'Destinos', 'lista' => array( 'San Carlos de Bariloche', 'Villa La Angostura' ) ),
-        array( 'titulo' => 'Noches de alojamiento', 'lista' => array( '08 Noches totales', '06 Noches en Bariloche', '02 Noches en Villa la Angostura' ) ),
+        array( 'titulo' => 'Destinos', 'lista' => array( 'San Rafael' ) ),
+        array( 'titulo' => 'Noches de alojamiento', 'lista' => array( '08 Noches San Rafael' ) ),
     ),
     'pdf' => '#',
     'pdf_size' => '50MB',
     'extra' => array(
-        array('titulo' => 'Días de nieve', 
+        /*array('titulo' => 'Días de nieve', 
             'icon' => array('svg' => 'nieve-icon.svg', '1X' => 'nieve-icon.png', '2X' => 'nieve-icon@2x.png'),
             'data' => array('Visita al Cerro Catedral', 'Piedras Blancas', 'Otto House Music', 'Montaña Boutique', 'Ski & Snowboard Selec.')
         ),
         array('titulo' => 'Actividades exclusivas',
             'icon' => array('svg' => 'actividades-icon.svg', '1X' => 'actividades-icon.png', '2X' => 'actividades-icon@2x.png'),
             'data' => array('Fiesta de Bienvenida', 'After Ski', 'Previa de Encuentro',' Cena de velas', 'Ice Bar Bariloche', 'Fiesta de Despedida')
+        ),*/
+        array('titulo' => 'Opciones de Excursiones', 'icon' => array('svg' => 'excursiones-icon.svg', '1X' => 'excursiones-icon.png', '2X' => 'excursiones-icon@2x.png'),
+         'data' => array('Peko´s', 'Mundo Fantástico', 'Vértigo Acuático', 'Parque Siquiman', 'Frampie CocoGuana', 'El Pinar', 'Bahía Los Mimbres', 'Aventura Auckland', 'Acuatitobogan', 'Fly Rock', 'Aventura 4X4','Dique San Roque', 'Bosque Aventura', 'Tío Joe', 'Casa de Casper', 'Wavezone', 'Valle del Buitre', 'Crazy Donkey', 'Fogón' )
         ),
-        array('titulo' => 'Excursiones', 'icon' => array('svg' => 'excursiones-icon.svg', '1X' => 'excursiones-icon.png', '2X' => 'excursiones-icon@2x.png'),
-         'data' => array('Speed Mountain', 'Auckland Day', 'Fourtrax 4x4', 'Zip line', 'Fábricas regionales', 'Día de campo', 'Paint ball', 'Isla Victoria', 'Bosque arrayanes' )
-        ),
-        array('titulo' => 'Fiestas Fleek',
+        array('titulo' => 'Programa nocturno',
             'icon' => array('svg' => 'estrella-outline.svg', '1X' => 'estrella-outline.png', '2X' => 'estrella-outline@2x.png'),
-            'data' => array('Noche de Disfraces', 'Painting Party', 'Stickers War', 'Fiesta Fluor', 'Mardi Gras', 'Fiesta Bizarra', 'Fiesta del Estudiante', 'Fiesta Argentina', 'Noche de Encuentro', 'White Experience')
+            'data' => array('Keop’s', 'Khalama', 'Molino Rojo', 'Paraíso Perdido', 'Fiesta de Disfraces' ,'Cena de Graduados')
         ), 
     ),
 );

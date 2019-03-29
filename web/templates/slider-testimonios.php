@@ -1,19 +1,60 @@
 <?php 
 $experiencias = array(
     array(
-        'titulo'=> 'El mejor viaje de mi vida.',
-        'nombre'=> 'Nombre Apellido',
+        'titulo'=> 'Adrenalina en Crazy Donkey.',
+        'nombre'=> 'Powered by Snap',
         'imagen'=> '',
         'imagen2x'=> '',
-        //'video'=> 'https://vimeo.com/1865983',
-        'video'=> 'https://vimeo.com/1562621',
+        'video'=> 'https://vimeo.com/327286160/65642b94ca',
     ),
     array(
-        'titulo'=> 'El Otro viaje de mi vida.',
-        'nombre'=> 'Nombre Apellido',
+        'titulo'=> 'Hotelería Premium.',
+        'nombre'=> 'Powered by Snap',
         'imagen'=> '',
         'imagen2x'=> '',
-        'video'=> 'https://vimeo.com/1865983',
+        'video'=> 'https://vimeo.com/327286551/9f2f9461ed',
+    ),
+    array(
+        'titulo'=> 'Matinée en Khalama.',
+        'nombre'=> 'Powered by Snap',
+        'imagen'=> '',
+        'imagen2x'=> '',
+        'video'=> 'https://vimeo.com/327286859/8d8c2b624e',
+    ),
+    array(
+        'titulo'=> 'Noche de graduados en Malambo.',
+        'nombre'=> 'Powered by Snap',
+        'imagen'=> '',
+        'imagen2x'=> '',
+        'video'=> 'https://vimeo.com/327287200/31407a7a51',
+    ),
+    array(
+        'titulo'=> 'Pijama Party en Molino.',
+        'nombre'=> 'Powered by Snap',
+        'imagen'=> '',
+        'imagen2x'=> '',
+        'video'=> 'https://vimeo.com/327287677/2b52d678a4',
+    ),
+    array(
+        'titulo'=> 'Día a pura diversión en Peko’s.',
+        'nombre'=> 'Powered by Snap',
+        'imagen'=> '',
+        'imagen2x'=> '',
+        'video'=> 'https://vimeo.com/327288081/5abc515107',
+    ),
+    array(
+        'titulo'=> 'Tarde de kartings en Siquiman.',
+        'nombre'=> 'Powered by Snap',
+        'imagen'=> '',
+        'imagen2x'=> '',
+        'video'=> 'https://vimeo.com/327288880/89859835d4',
+    ),
+    array(
+        'titulo'=> 'Diversión acuática en WaveZone.',
+        'nombre'=> 'Powered by Snap',
+        'imagen'=> '',
+        'imagen2x'=> '',
+        'video'=> 'https://vimeo.com/327289546/b8585524fe',
     ),
 );
 ?>
