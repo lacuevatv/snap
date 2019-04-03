@@ -28,17 +28,18 @@
     .slider-header {
         .item-slider {
             .imagen-fondo {
-                position: absolute;
+                position: fixed;
                 z-index: 1;
                 width: 100%;
                 height: 100%;
 
                 img {
-                    position: absolute;
+                    position: fixed;
                     top: 50%;
                     @include transform(translateY(-50%));
                     width: 100%;
                     height: auto;
+                    backface-visibility: hidden;
 
                     @media (min-width: $md) {
                         width: 120%!important;
