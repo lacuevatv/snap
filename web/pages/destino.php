@@ -23,11 +23,11 @@ $villaCarlosPazData = array(
     'icon' => array('svg' => 'bariloche-icon-top.svg', '1X' => 'bariloche-icon-top.png', '2X' => 'bariloche-icon-top@2x.png'),
     'resumen' => '<p>Te proponemos un viaje de egresados distinto, en el que los chicos van a disfrutar de las actividades más completas, dinámicas e impactantes, en los lugares más prestigiosos y seguros de la región. Nuestros planes ofrecen una gran variedad de opciones para todos los gustos y cubren todos los días de la estadía en la ciudad.</p>',
     'dataDestino' => array(
-        array( 'titulo' => 'Duración', 'lista' => array( '11 Días totales' ) ),
+        array( 'titulo' => 'Duración', 'lista' => array( '5 Días totales' ) ),
         array( 'titulo' => 'Destinos', 'lista' => array( 'Villa Carlos Paz' ) ),
-        array( 'titulo' => 'Noches de alojamiento', 'lista' => array( '08 Noches en Villa Carlos Paz' ) ),
+        array( 'titulo' => 'Noches de alojamiento', 'lista' => array( '4 Noches en Villa Carlos Paz' ) ),
     ),
-    'pdf' => '#',
+    'pdf' => 'itinerario-villa-carlos-paz.pdf',
     'pdf_size' => '50MB',
     'extra' => array(
         /*array('titulo' => 'Días de nieve', 
@@ -67,9 +67,9 @@ $sanRafaelData = array(
     'icon' => array('svg' => 'cancun-icon-top.svg', '1X' => 'cancun-icon-top.png', '2X' => 'cancun-icon-top@2x.png'),
     'resumen' => '<p>Tenemos una propuesta distinta, para que los egresados puedan vivir un viaje único, en el que los chicos van a disfrutar de las actividades más completas, dinámicas e impactantes, en los lugares más prestigiosos y seguros de la región. Nuestros planes ofrecen una gran variedad de opciones para todos los gustos y cubren todos los días de la estadía en la ciudad.</p>',
     'dataDestino' => array(
-        array( 'titulo' => 'Duración', 'lista' => array( '11 Días totales' ) ),
+        array( 'titulo' => 'Duración', 'lista' => array( '5 Días totales' ) ),
         array( 'titulo' => 'Destinos', 'lista' => array( 'San Rafael' ) ),
-        array( 'titulo' => 'Noches de alojamiento', 'lista' => array( '08 Noches San Rafael' ) ),
+        array( 'titulo' => 'Noches de alojamiento', 'lista' => array( '4 Noches San Rafael' ) ),
     ),
     'pdf' => '#',
     'pdf_size' => '50MB',

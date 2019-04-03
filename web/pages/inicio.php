@@ -93,10 +93,10 @@ getTemplate( 'header' ); ?>
         <div class="compra-wrapper">
             <h2>
                 <span class="only-mobile">
-                    Hacé la reserva para tu grupo en forma online con un solo click.
+                    Hacé la reserva para tu grupo de forma online, con un solo click.
                 </span>
                 <span class="only-pc">
-                    Hacé la reserva para tu grupo en forma online con un solo click.
+                    Hacé la reserva para tu grupo de forma online, con un solo click.
                 </span>
             </h2>
             

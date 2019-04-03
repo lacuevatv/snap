@@ -91,7 +91,7 @@ foreach ($data as $itemData ) { ?>
 
                 <div class="data-extra">
 
-                    <a class="icon-download only-pc" data-tooltip="Tamaño: <?php echo $itemData['pdf_size']; ?>" href="<?php echo UPLOADSURL . '/' . $itemData['pdf']; ?>">
+                    <a class="icon-download only-pc" data-tooltip="Tamaño: <?php echo $itemData['pdf_size']; ?>" href="<?php echo UPLOADSURL . '/' . $itemData['pdf']; ?>" target="_blank">
                         <span class="icon-download__textWrapper">
                             <span class="icon-download__text">Descargar PDF</span>
                             <picture>
