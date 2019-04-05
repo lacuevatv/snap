@@ -722,7 +722,10 @@
     }//.experiencia-data
 
     .experiencia-contenido {
-        height: 365px;
+        height: 205px;
+        @media (min-width: $xs) {
+            height: 265px;
+        }
         @media (min-width: $sm) {
             height: 540px;
         }

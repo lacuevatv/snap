@@ -1893,7 +1893,12 @@ html, body {
   width: auto;
 }
 .wrapper-slider-testimonios .experiencia-contenido {
-  height: 365px;
+  height: 205px;
+}
+@media (min-width: 576px) {
+  .wrapper-slider-testimonios .experiencia-contenido {
+    height: 265px;
+  }
 }
 @media (min-width: 768px) {
   .wrapper-slider-testimonios .experiencia-contenido {
