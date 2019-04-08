@@ -13,7 +13,8 @@
             <h5 class="super-title">VCP</h5>
             <h3 class="title-destino">Villa Carlos Paz</h3>
             <div class="stars"></div>
-            <a class="icon-btn-right" href="<?php echo MAINSURL; ?>/villa-carlos-paz">
+            <a class="icon-btn-right" href="#">
+            <!--<a class="icon-btn-right" href="<?php echo MAINSURL; ?>/villa-carlos-paz">-->
                 <span>Conocé más</span>
                 <picture>
                     <source srcset="<?php echo IMAGES; ?>icon-sol.svg" type="image/svg+xml">
@@ -41,7 +42,8 @@
             <h5 class="super-title">SRM</h5>
             <h3 class="title-destino">San Rafael</h3>
             <div class="stars"></div>
-            <a class="icon-btn-right" href="<?php echo MAINSURL; ?>/san-rafael">
+            <a class="icon-btn-right" href="#">
+            <!--<a class="icon-btn-right" href="<?php echo MAINSURL; ?>/san-rafael">-->
                 <span>Conocé más</span>
                 <picture>
                     <source srcset="<?php echo IMAGES; ?>icon-sol-blanco.svg" type="image/svg+xml">
