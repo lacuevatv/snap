@@ -85,14 +85,14 @@
 							<source srcset="<?php echo IMAGES; ?>telf.png 1x, <?php echo IMAGES; ?>telf@2x.png 2x" media="(min-width: 315px)">
 							<img src="<?php echo IMAGES; ?>telf.png" alt="Icon Telephone">
 						</picture>
-						[0364] 426454
+						[54 3364] 4426454
 					</p>
 					<p class="btn-icon-left">
 						<picture>
 							<source srcset="<?php echo IMAGES; ?>whatsapp.png 1x, <?php echo IMAGES; ?>whatsapp@2x.png 2x" media="(min-width: 315px)">
 							<img src="<?php echo IMAGES; ?>whatsapp.png" alt="Icon Whatsapp">
 						</picture>
-						336.4387271
+						3364.387271
 					</p>
 					<p class="btn-icon-left">
 						<picture>
